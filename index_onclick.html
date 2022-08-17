@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #f33;
+            border-radius: 10px;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="saudacoes()">Diga olá</button>
+    <button onclick="mostraCaixa()">Mostra card</button>
+    <p onmouseout="trocaTexto()">Passe o mouse aqui</p>
+
+    <div id="caixa"></div>
+
+    <script>
+
+        function saudacoes() {
+            alert('Olá !');
+        }
+
+        function mostraCaixa() {
+            const caixa = document.getElementById('caixa');
+
+            caixa.style.display = 'block';
+        }
+
+        function trocaTexto() {
+            const txt = document.querySelector('p');
+
+            txt.innerHTML = ('Mudou');
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="container">
+        <div id="lista-container">
+            <ul id="lista">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>            
+        </div>
+    </main>
+
+    <script>
+        let main = document.getElementById('container');
+        let div = document.getElementById('lista-container');
+        let ul = document.getElementById('lista');
+
+        ul.childNodes[1].innerHTML = 'Olá';
+
+        console.log(ul.childNodes);
+    </script>
+
+</body>
+
+</html>
